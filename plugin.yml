@@ -1,0 +1,52 @@
+---
+name: Tags
+version: 3.0.0
+main: AizeenDev\Tags\Main
+software: PocketMine-MP
+api: 5.0.0
+author: AizeenDev
+description: Custom ranking system, final released.
+
+commands:
+  rank:
+    description: "Assign ranges: OWNER, ADMIN, MOD, HELPER, BUILDER, HERO, LEGEND, VIP, DIAMOND, TIKTOK, YOUTUBE, TWITCH or PLAYER"
+    usage: "/rank <player> <rank>"
+    permission: rank.cmd
+  nickcolor:
+    description: "Change your name tag color using english names"
+    usage: "/nickcolor <colorName>"
+    permission: color.nick
+  chatcolor:
+    description: "Change your chat message color using english names"
+    usage: "/chatcolor <colorName>"
+    permission: color.chat
+  joinmsg:
+    description: "Choose your personalized welcome message (1, 2 o 3)"
+    usage: "/joinmsg <1|2|3>"
+    permission: tags.messages
+  quitmsg:
+    description: "Choose your personalized exit message (1, 2 o 3)"
+    usage: "/quitmsg <1|2|3>"
+    permission: tags.messages
+  msgcolor:
+    description: "Change the color of your incoming and outgoing messages"
+    usage: "/msgcolor <colorName>"
+    permission: tags.messages
+
+permissions:
+  tags.use:
+    default: op
+    description: "Permission to use manual tags"
+  rank.cmd:
+    default: op
+    description: "Permission to use the /rank command"
+  color.nick:
+    default: op
+    description: "Permission to change the name color"
+  color.chat:
+    default: op
+    description: "Permission to change chat color"
+  tags.messages:
+    default: true
+    description: "Permission to change your incoming and outgoing messages"
+...
