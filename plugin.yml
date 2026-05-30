@@ -2,7 +2,6 @@
 name: Tags
 version: 3.0.0
 main: AizeenDev\Tags\Main
-software: PocketMine-MP
 api: 5.0.0
 author: AizeenDev
 description: Custom ranking system, final released.
